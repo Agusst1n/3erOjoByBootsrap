@@ -45,7 +45,7 @@ body{
 .timeline-dot{
     height: 16px;
     width: 16px;
-    background-color: #EAA023;
+    background-color: #19D897;
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
@@ -90,4 +90,11 @@ body{
     .timeline-dot{
         left:0;
     }
+}
+.color{
+    color: white;
+}
+
+.border{
+    border-radius: 25px;
 }
