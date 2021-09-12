@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #24292D;
+}
+
+::selection {
+    background-color: #19d897; 
+    color: white;
+} 
+.timeline-section{
+    background-color: #24292D;
+    min-height: 100vh;
+    padding: 100px 15px;
+    color: #19d897;
+}
+.timeline-items{
+    max-width: 1000px;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #2F363E;
+    left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+    height: 16px;
+    width: 16px;
+    background-color: #19D897;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top:10px;
+}
+.timeline-date{
+    font-size: 18px;
+    color: #19D897;
+    margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: #2F363E;
+    padding: 30px;
+    border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin:0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.timeline-content p{
+    color: #C8C8C8;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+/* responsive */
+@media(max-width: 767px){
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left:0;
+    }
+}
+.color{
+    color: white;
+}
+
+.border{
+    border-radius: 25px;
+}
+
+.quieneSomos{
+    border-radius: 25px;
+    margin-top: 10px;
+    text-size-adjust: 10xp;
+    text-justify: auto;
+
+}
+.contenedor{
+    max-width: 1500px;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+.shining{
+    COLOR: white;
+    text-shadow: 0 0 10px;
+}
+.textcolor {
+    color: #19D897;
+}
+
+.rounded {
+    border-top: 8px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.padding{
+    padding: 5%;
+}
+
+.cajita{
+    flex-wrap:nowrap ;
+    display: flex;
+}
+.left {   
+    display: flex;
+    flex-shrink: 0%;
+    flex-basis: 50%;
+    padding: 3%;
+}
+
+.right{
+    display: flex;
+    padding: 3%;
+    width: 50%;
+    font-size: large;
+}
+
+.form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 5%;
+}
+
+.rounded2{
+        border-top: 5px solid;
+        border-radius: 10px;
+        color: #19D897;
+        margin-left: 5%;
+        margin-right: 5%;
+}
+
+.colorbutton{
+    background-color: #19D897;
+    border: white;
+}
+
+.colorbutton:hover{
+    background-color: white;
+    color: #19D897;
+    border: #19D897;
+}
+
+.textcolor2{
+    color: white;
+}
+
+.font-size{
+    font-size: x-large;
+}
+
+.padding2{
+    margin-left: 3%;
+}
+
+.border {
+    border-radius: 500%;
+}
+
+.cajas {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.ojo {
+    display: flex;
+    margin-left: 45%;
+    text-align: center;
+}
+
+.wsp {
+    color: white;
+    display: flex;
+    margin-left: 460px;
+    align-items:center;
+}
+
+.contactanos {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #19D897;
+    border: #19D897;
+   
+}
